@@ -2,7 +2,7 @@
 
 **Candidate:** Sanjana Laxman[cite: 40]
 **Institution / Lab:** Laboratory of Intelligent Systems, Kyushu University (Prof. Danilo Vasconcellos Vargas)[cite: 40]
-**Consolidated Report:** `Sanjana_Laxman_Kyushu_LIS_Selection_Report.pdf`
+**Consolidated Report:** [Sanjana_Laxman_Kyushu_LIS_Selection_Report.pdf](https://drive.google.com/file/d/1m2F3ZWGlQWO2jt8Hc-HvyMWDtc3akNak/view?usp=sharing)
 
 ## Repository Structure
 
