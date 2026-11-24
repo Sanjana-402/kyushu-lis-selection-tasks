@@ -1,0 +1,117 @@
+{
+    "metadata": {
+        "task": "B5 - Dynamical Systems & Chaos in Recurrent Neural Networks",
+        "laboratory": "Laboratory of Intelligent Systems, Kyushu University",
+        "candidate": "Sanjana Laxman",
+        "date": "2026-11-19"
+    },
+    "model_architecture": {
+        "type": "Discrete-time 2-neuron coupled recurrent neural network",
+        "governing_equation": "x(t+1) = tanh(g * W @ x(t))",
+        "dimension": 2,
+        "weight_matrix_W": [
+            [
+                -6.0,
+                -5.0
+            ],
+            [
+                10.5,
+                9.0
+            ]
+        ],
+        "matrix_properties": {
+            "trace": 3.0,
+            "determinant": -1.4999999999999947,
+            "eigenvalues_real": [
+                -0.43649167310370984,
+                3.43649167310371
+            ],
+            "eigenvalues_imag": [
+                0.0,
+                0.0
+            ]
+        }
+    },
+    "regime_analysis": [
+        {
+            "name": "Stable Fixed Point",
+            "short_name": "fixed_point",
+            "gain_g": 0.4,
+            "description": "Equilibrium point attractor with negative Lyapunov spectrum",
+            "initial_condition_base": [
+                0.1,
+                -0.1
+            ],
+            "initial_condition_perturbed": [
+                0.101,
+                -0.1
+            ],
+            "initial_divergence_delta0": 0.0010000000000000009,
+            "final_divergence_deltaT": 5.900916318210353e-16,
+            "divergence_amplification_ratio": 5.900916318210348e-13,
+            "lyapunov_exponent_renormalization": -0.7895741227674139,
+            "lyapunov_exponent_jacobian": -0.7895740172589274,
+            "is_chaotic": false
+        },
+        {
+            "name": "Periodic Limit Cycle",
+            "short_name": "limit_cycle",
+            "gain_g": 0.7,
+            "description": "Stable Period-2 closed limit cycle born via flip bifurcation",
+            "initial_condition_base": [
+                0.1,
+                -0.1
+            ],
+            "initial_condition_perturbed": [
+                0.101,
+                -0.1
+            ],
+            "initial_divergence_delta0": 0.0010000000000000009,
+            "final_divergence_deltaT": 0.0,
+            "divergence_amplification_ratio": 0.0,
+            "lyapunov_exponent_renormalization": -0.9338776282482306,
+            "lyapunov_exponent_jacobian": -0.9338776276123115,
+            "is_chaotic": false
+        },
+        {
+            "name": "Chaotic Attractor",
+            "short_name": "chaos",
+            "gain_g": 1.05,
+            "description": "Strange chaotic attractor with positive Lyapunov exponent (sensitive dependence)",
+            "initial_condition_base": [
+                0.1,
+                -0.1
+            ],
+            "initial_condition_perturbed": [
+                0.101,
+                -0.1
+            ],
+            "initial_divergence_delta0": 0.0010000000000000009,
+            "final_divergence_deltaT": 0.25372192363410845,
+            "divergence_amplification_ratio": 253.72192363410824,
+            "lyapunov_exponent_renormalization": 0.3680944986955072,
+            "lyapunov_exponent_jacobian": 0.3680932180925645,
+            "is_chaotic": true
+        }
+    ],
+    "bifurcation_summary": {
+        "gain_sweep_range": [
+            0.2,
+            1.6
+        ],
+        "num_gain_evaluations": 600,
+        "pitchfork_bifurcation_g": 0.291,
+        "flip_period2_bifurcation_g": 0.655,
+        "period4_bifurcation_g": 0.772,
+        "chaos_onset_edge_of_chaos_g": 0.865,
+        "peak_lyapunov_exponent": 0.5026163699685042,
+        "peak_lyapunov_gain": 1.2914858096828048,
+        "minimum_lyapunov_exponent": -1.0001508337320069,
+        "fraction_chaotic_regime": 0.47,
+        "periodic_window_detected": {
+            "gain_approx": 1.3,
+            "period": 10,
+            "lyapunov_exponent": -0.40630573460456215
+        }
+    }
+}

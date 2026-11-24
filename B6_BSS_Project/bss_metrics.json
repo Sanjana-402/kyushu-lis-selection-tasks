@@ -1,0 +1,76 @@
+{
+    "candidate": "Sanjana Laxman",
+    "laboratory": "Laboratory of Intelligent Systems, Kyushu University",
+    "supervisor": "Prof. Danilo V. Vargas",
+    "sample_rate": 8000,
+    "duration": 3.0,
+    "num_samples": 24000,
+    "three_source": {
+        "sources": [
+            {
+                "id": 1,
+                "name": "Pure Sine Wave (262 Hz)",
+                "type": "Pure Tone Sine",
+                "frequency": "262 Hz",
+                "kurtosis": -1.5000699030193632,
+                "mix_corr": 0.6791787017263254,
+                "recovered_corr": 0.9999993901061359,
+                "sir_db": 59.13715871833431
+            },
+            {
+                "id": 2,
+                "name": "Sawtooth Wave (150 Hz)",
+                "type": "Sawtooth Wave",
+                "frequency": "150 Hz",
+                "kurtosis": -1.1998175445183752,
+                "mix_corr": 0.7718960722359068,
+                "recovered_corr": 0.9999996127680744,
+                "sir_db": 61.1099893329465
+            },
+            {
+                "id": 3,
+                "name": "FM Chirp (100-1200 Hz)",
+                "type": "Linear FM Chirp",
+                "frequency": "100 - 1200 Hz",
+                "kurtosis": -1.5000006765356828,
+                "mix_corr": 0.8047416794444184,
+                "recovered_corr": 0.9999588818824172,
+                "sir_db": 40.84945708984962
+            }
+        ],
+        "mixing_matrix": [
+            [
+                1.1621780831931536,
+                0.9655000144869412,
+                0.8123957592679836
+            ],
+            [
+                0.7190609389379257,
+                1.0092130483097055,
+                0.40919616423534183
+            ],
+            [
+                0.3406585285177396,
+                0.9063233020424546,
+                1.320780508220246
+            ]
+        ],
+        "condition_number": 8.64484317922431,
+        "iterations": 7,
+        "mean_correlation": 0.9999859615855424,
+        "mean_sir": 53.698868380376815
+    },
+    "two_source": {
+        "iterations": 3,
+        "correlations": [
+            0.9999999997039632,
+            0.9999997902503516
+        ],
+        "sirs_db": [
+            92.27625099915564,
+            63.77268808274845
+        ],
+        "mean_correlation": 0.9999998949771574,
+        "mean_sir": 78.02446954095204
+    }
+}
